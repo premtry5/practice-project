@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* background: whitesmoke; */
+  background: #333 url('../assets/hotel.png') no-repeat center center/cover;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  margin-bottom: 45px;
+}
+form {
+  width: 90%;
+}
+.form-group {
+  height: 65px;
+}
+
+label {
+  position: relative;
+  bottom: 10px;
+  letter-spacing: 2px;
+}
+
+input {
+  width: 100%;
+  height: 34px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Work Sans';
+  border: 1px solid rgb(72, 72, 72);
+  background: whitesmoke;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+button {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  height: 38px;
+  width: 80px;
+  background: rgb(61, 61, 61);
+  color: white;
+}
+button:hover {
+  filter: brightness(120%);
+}
+.form-account {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    margin-top: 2.2rem;
+  }
+.form-account p {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+
+.form-account span {
+  color: #05245a;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 400px) {
+  .form-container {
+    width: 90vw;
+  }
+}
